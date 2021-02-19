@@ -2,6 +2,8 @@
   <%= r.input :name, label: 'Name' %>
   <%= r.input :address, label: 'Address' %>
   <%= r.input :phone_number, label: 'Phone Number' %>
-  <%= r.input :category, label: 'Category' %>
+  <%= r.input :category, label: 'Category', :collection => %w(chinese italian japanese french belgian) %>
   <%= r.submit %>
 <% end %>
+
+<p><%= link_to "Main Page", restaurants_path %></p>

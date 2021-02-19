@@ -2,6 +2,9 @@
 
 <%= simple_form_for [@restaurant, @review] do |r| %>
   <%= r.input :content, label: 'Content' %>
-  <%= r.input :rating, label: 'Rating' %>
+  <%# r.input :rating, label: 'Rating' %>
+  <%= r.collection_radio_buttons :rating, [[5], [4], [3], [2], [1], [0]], :first, :last %>
   <%= r.submit %>
 <% end %>
+
+<p><%= link_to "Main Page", restaurants_path %></p>

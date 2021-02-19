@@ -11,3 +11,50 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #f4f6ff;
+}
+
+.nav-bar {
+  height: 64px;
+  background-color: #127681;
+  text-align: center;
+  color: white;
+  padding-top: 14px;
+  border-bottom: 10px solid #f3c623;
+}
+
+.main-container {
+  margin: 48px auto;
+  width: 50%;
+
+}
+
+.title-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #10375c;
+}
+
+a:hover {
+  color: #f3c623;
+}

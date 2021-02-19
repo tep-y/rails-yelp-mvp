@@ -1,8 +1,11 @@
+<div class="title-add">
 <h1>Restaurants</h1>
+<p><%= link_to "+ Add a new restaurant", new_restaurant_path %></p>
+</div>
 
 <ul>
   <% @restaurants.each do |restaurant| %>
-  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <li><h4><%= link_to restaurant.name, restaurant_path(restaurant) %></h4></li>
   <% end %>
 </ul>
 
